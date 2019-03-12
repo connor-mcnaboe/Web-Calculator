@@ -30,13 +30,18 @@
         <p>
             {{ form.integer1.label }} &nbsp; 
             {{ form.integer1(size=32, class="intfield") }}
+            {% for error in form.integer1.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
         </p>
         <br> 
         <p>
             {{ form.integer2.label }} &nbsp; 
             {{ form.integer2(size=32, class="intfield") }}
+            {% for error in form.integer2.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
         </p>
-        <br>
         <p>{{ form.add(class="operator") }} &nbsp; 
            {{ form.subtract(class="operator") }} &nbsp; 
            {{ form.multiply(class="operator") }} &nbsp; 
