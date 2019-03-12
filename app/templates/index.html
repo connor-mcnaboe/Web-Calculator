@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>{{ title }} - Web Calculator</title>
+    </head>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.integer1.label }}<br>
+            {{ form.integer1(size=32) }}
+        </p>
+        <p>
+            {{ form.integer2.label }}<br>
+            {{ form.integer2(size=32) }}
+        </p>
+        <p>{{ form.add() }}</p>
+        <p>{{ form.subtract() }}</p>
+        <p>{{ form.multiply() }}</p>
+        <p>{{ form.divide() }}</p>
+        <p>{{ form.clear() }}</p>
+    </form>
+</html>
