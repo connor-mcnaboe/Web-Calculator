@@ -6,7 +6,9 @@ Web Calculator is a web based calculator that performs simple arithmetic operati
 
 ### Download
 
+'''
 git clone https://github.com/zerodarkbirdy/Web-Calculator.git
+'''
 
 #### Mac
 
