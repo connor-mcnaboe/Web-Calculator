@@ -1,23 +1,50 @@
 <html>
-    
+    <style> 
+    .intfield {
+        background-color: white;
+        color: black;
+        border: 1px solid DodgerBlue;
+        text-align: center;
+        margin: 5px;
+        padding: 5px;
+      }
+      .operator { 
+        background-color: DodgerBlue;
+        color: black;
+        border: 1px solid DodgerBlue;
+        margin: 7px;
+        padding: 5px;
+        width: 40px;
+      }
+      .result { 
+        width: 320px;
+        padding: 10px;
+        border: 1px solid dodgerblue;
+        margin: 10px;
+      }
+    </style> 
     <form action="" method="post" novalidate>
         {{ form.hidden_tag() }}
         <h1>{{ title }} - Web Calculator</h1>
     
         <p>
-            {{ form.integer1.label }}<br>
-            {{ form.integer1(size=32) }}
+            {{ form.integer1.label }} &nbsp; 
+            {{ form.integer1(size=32, class="intfield") }}
         </p>
+        <br> 
         <p>
-            {{ form.integer2.label }}<br>
-            {{ form.integer2(size=32) }}
+            {{ form.integer2.label }} &nbsp; 
+            {{ form.integer2(size=32, class="intfield") }}
         </p>
-        <p>{{ form.add() }}</p>
-        <p>{{ form.subtract() }}</p>
-        <p>{{ form.multiply() }}</p>
-        <p>{{ form.divide() }}</p>
-        <p>{{ form.clear() }}</p>
+        <br>
+        <p>{{ form.add(class="operator") }} &nbsp; 
+           {{ form.subtract(class="operator") }} &nbsp; 
+           {{ form.multiply(class="operator") }} &nbsp; 
+           {{ form.divide(class="operator") }} &nbsp; 
+           {{ form.clear(class="operator") }}</p>
 
     </form>
-    <p>Result: {{ answer }}</p>
+    <p>Result: <br>
+        <div class="result"> {{ answer }}</div>
+    </p>
 </html>
