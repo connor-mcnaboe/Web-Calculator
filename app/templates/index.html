@@ -1,9 +1,9 @@
 <html>
-    <head>
-        <title>{{ title }} - Web Calculator</title>
-    </head>
+    
     <form action="" method="post" novalidate>
         {{ form.hidden_tag() }}
+        <h1>{{ title }} - Web Calculator</h1>
+    
         <p>
             {{ form.integer1.label }}<br>
             {{ form.integer1(size=32) }}
@@ -17,5 +17,7 @@
         <p>{{ form.multiply() }}</p>
         <p>{{ form.divide() }}</p>
         <p>{{ form.clear() }}</p>
+
     </form>
+    <p>Result: {{ answer }}</p>
 </html>
