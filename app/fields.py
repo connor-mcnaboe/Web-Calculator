@@ -1,6 +1,6 @@
 # Created: 03/11/19
 # Author: Connor McNaboe
-# Purpose: Defines functions needed for calculator arithmatic
+# Purpose: Defines fields needed for calculator arithemtic
 
 from flask_wtf import FlaskForm
 from wtforms import IntegerField, BooleanField, SubmitField

@@ -6,8 +6,11 @@ from flask import render_template, flash, request, redirect, url_for
 from app import app
 from app.fields import CalcFields
 
+# Set routes and allowed methods
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/index', methods=['GET', 'POST'])
+
+# Configure functions/procedures allowed on /index page
 def index():
     form = CalcFields()
     answer = ''
