@@ -10,13 +10,59 @@ Web Calculator is a web based calculator that performs simple arithmetic operati
 git clone https://github.com/zerodarkbirdy/Web-Calculator.git
 ```
 
-#### Mac
+### Installation
 
-#### Windows
+If you would like to install the required dependencies directly to your machine, run: 
 
-#### Linux 
+```
+python3 setup.py
+```
 
-### Usage 
+If you wish to create a virtual environment from which you will run the application, change your directory to WebClac/and run:
+ 
+
+```
+"python3 -m venv wcvenv"
+```
+
+To activate the virtual environment you just created, jump to the documentation on the system you are using (below).
+
+#### Unix Systems
+
+To activate the virtual environment on a Unix system (Mac OSX or Linux), run: 
+
+```
+source wcvenv/bin/activate
+```
+
+Once the environment is activated then execute the setup file:
+ 
+```
+"python3 -m venv wcvenv"
+```
+
+#### Windows Systems
+
+To activate the virtual environment on a Windows system, run: 
+
+```
+wcvenv\bin\activate
+```
+
+Once the environment is activated then execute the setup file:
+ 
+```
+"python3 -m venv wcvenv"
+```
+
+### Running the server 
+
+To start the server, run in the WebCalc directory: 
+
+```
+"flask run" 
+```
 
 ### Troubleshooting 
 
+For any errors or issues, please contact [mailto](connor.mcnaboe@uconn.edu)
