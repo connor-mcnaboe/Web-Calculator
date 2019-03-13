@@ -11,3 +11,4 @@ import os
 os.system("pip3 install --upgrade pip") # Upgrade pip
 os.system("pip3 install flask")
 os.system("pip3 install flask-wtf")
+os.system("pip3 install python-dotenv")

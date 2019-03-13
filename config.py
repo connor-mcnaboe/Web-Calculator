@@ -3,7 +3,9 @@
 # Prupose: Configuration settings for flask application
 
 import os 
+from dotenv import load_dotenv
 
 class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'defualt-string-to-change'
-    FLASK_ENV=development
+    dotenv_path = join(dirname(__file__), '.flaskenv') 
+    load_dotenv(dotenv_path)
