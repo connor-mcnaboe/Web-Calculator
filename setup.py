@@ -5,11 +5,15 @@
 
 ## Before running this script, ensure that you have changed your directory to  WebCalc/ ##
 
-import os 
+import os
+import sys
 
 #-Create virtual enviroment-#
 os.system("python3 -m venv wcvenc")
-os.system("source venv/bin/activate")
+if "win" in sys.platform(): 
+    os.system('wcvenv\\Scripts\\activate')
+else: 
+    os.system("source wcvenv/bin/activate")
 
 #-Install packages-#
 os.system("pip install --upgrade pip") # Upgrade pip
