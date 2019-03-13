@@ -65,4 +65,4 @@ flask run
 
 ### Troubleshooting 
 
-For any errors or issues, please contact [mailto](connor.mcnaboe@uconn.edu)
+For any errors or issues, please contact [connor.mcnaboe@uconn.edu](mailto:connor.mcnaboe@uconn.edu)
