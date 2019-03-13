@@ -12,7 +12,7 @@ git clone https://github.com/zerodarkbirdy/Web-Calculator.git
 
 ### Installation
 
-If you would like to install the required dependencies directly to your machine, run: 
+If you would like to install the required dependencies directly to your machine, change your directory to Web-Calculator/ and run: 
 
 ```
 python3 setup.py
@@ -25,7 +25,7 @@ If you wish to create a virtual environment from which you will run the applicat
 python3 -m venv wcvenv
 ```
 
-To activate the virtual environment you just created, jump to the documentation on the system you are using (below).
+If python 3.x is your defualt python ($PATH points to python 3.x), then drop the 3 in all pythonX commands. To activate the virtual environment you just created, jump to the documentation on the system you are using (below).
 
 #### Unix Systems
 
@@ -46,7 +46,7 @@ python3 setup.py
 To activate the virtual environment on a Windows system, run: 
 
 ```
-wcvenv\bin\activate
+wcvenv\Scripts\activate
 ```
 
 Once the environment is activated then execute the setup file:
