@@ -18,7 +18,7 @@ If you would like to install the required dependencies directly to your machine,
 python3 setup.py
 ```
 
-If you wish to create a virtual environment from which you will run the application, change your directory to WebClac/and run:
+If you wish to create a virtual environment from which you will run the application, change your directory to Web-Calculator/ and run:
  
 
 ```
@@ -57,7 +57,7 @@ python3 setup.py
 
 ### Running the server 
 
-To start the server, run in the WebCalc directory: 
+To start the server, run (in the Web-Calculator directory): 
 
 ```
 flask run 
