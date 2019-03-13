@@ -22,7 +22,7 @@ If you wish to create a virtual environment from which you will run the applicat
  
 
 ```
-"python3 -m venv wcvenv"
+python3 -m venv wcvenv
 ```
 
 To activate the virtual environment you just created, jump to the documentation on the system you are using (below).
@@ -38,7 +38,7 @@ source wcvenv/bin/activate
 Once the environment is activated then execute the setup file:
  
 ```
-"python3 -m venv wcvenv"
+python3 setup.py
 ```
 
 #### Windows Systems
@@ -52,7 +52,7 @@ wcvenv\bin\activate
 Once the environment is activated then execute the setup file:
  
 ```
-"python3 -m venv wcvenv"
+python3 setup.py
 ```
 
 ### Running the server 
@@ -60,7 +60,7 @@ Once the environment is activated then execute the setup file:
 To start the server, run in the WebCalc directory: 
 
 ```
-"flask run" 
+flask run 
 ```
 
 ### Troubleshooting 
