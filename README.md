@@ -12,7 +12,7 @@ git clone https://github.com/zerodarkbirdy/Web-Calculator.git
 
 ### Installation
 
-If you would like to install the required dependencies directly to your machine, change your directory to Web-Calculator/ and run: 
+If you would like to install the required dependencies directly to your machine, change your directory to Web-Calculator/ (or Web-Calculator-master) and run: 
 
 ```
 python3 setup.py
